@@ -278,6 +278,17 @@ var saveTasks = function() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
+var loadTasks = function() {
+  tasks = localStorage.getItem("tasks");
+  if (!tasks) {
+    return false;
+  }
+tasks = JSON.parse(tasks);
+for (var i = 0; i < savedTasks.length; i++) {
+  createTaskEl(savedTasks[i]);
+}
+}
+
 
 pageContentEl.addEventListener("click", taskButtonHandler);
 pageContentEl.addEventListener("change", taskStatusChangeHandler);
