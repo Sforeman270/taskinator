@@ -12,8 +12,6 @@
 <body>
     <header>
 
-        </div>
-        </form>
 
         <h1 class="page-title">Taskinator</h1>
 
@@ -23,17 +21,17 @@
             <div class="form-group">
                 <input type="text" name="task-name" class="text-input" placeholder="Enter Task Name" />
             </div>
-                <div class="form-group">
-                    
-                    <select name="task-type" class="select-dropdown">
-                        <option value="" disabled selected>Pick a task type</option>
-                        <option value="Print">Print</option>
-                        <option value="Web">Web</option>
-                        <option value="Mobile">Mobile</option>
-                    </select>
-                
-                </div>
+            <div class="form-group">
+
+                <select name="task-type" class="select-dropdown">
+                    <option value="" disabled selected>Pick a task type</option>
+                    <option value="Print">Print</option>
+                    <option value="Web">Web</option>
+                    <option value="Mobile">Mobile</option>
+                </select>
+
             </div>
+            
             <div class="form-group">
                 <button class="btn" id="save-task" type="submit">Add Task</button>
             </div>
@@ -42,11 +40,14 @@
 
     </header>
 
-    <main class="page-content">
+    <main class="page-content" id="page-content">
 
         <section class="task-list-wrapper">
             <h2 class="list-title">Tasks To Do</h2>
-            <ul class="task-list" id="tasks-to-do"></ul>
+            <ul class="task-list" id="tasks-to-do">
+
+
+            </ul>
         </section>
 
         <section class="task-list-wrapper">
@@ -61,21 +62,21 @@
 
 
     </main>
+
+
+
+
+
+
+
+
+
+    <script src="./assets/js/script.js"></script>
 </body>
-
-
-
-
-
-
-
-
-
-
 <footer>
     &copy;2020 by Taskinator
 </footer>
 
-<script src="./assets/js/script.js"></script>
+
 
 </html>
